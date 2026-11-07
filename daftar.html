@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Daftar | Student Portal</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="site-shell">
+<header class="navbar"><a class="brand" href="index.html"><span class="brand-mark">Z</span><span><b>STUDENT</b><small>PORTAL MAHASISWA</small></span></a><nav><a href="index.html">Beranda</a><a href="login.html">Login</a><a class="nav-cta active" href="daftar.html">Daftar <span>↗</span></a></nav></header>
+<main class="content-area"><section class="form-intro"><span class="pill"><i></i> REGISTRASI MAHASISWA</span><h1>Mulai langkah<br><span>barumu.</span></h1><p>Lengkapi informasi berikut untuk membuat profil mahasiswa.</p><div class="side-note"><b>01 / 04</b><span>ISI DATA DIRI DENGAN BENAR</span></div></section>
+<section class="form-panel"><div class="panel-heading"><div><p class="kicker">BUAT AKUN BARU</p><h2>Formulir pendaftaran</h2></div><span class="step-badge">✦</span></div>
+<form action="login.html" method="get" class="data-form" onsubmit="return checkPassword()">
+<div class="form-grid">
+<div class="field"><label for="username">Username <em>*</em></label><input id="username" name="username" type="text" placeholder="Buat username" required></div>
+<div class="field"><label for="nama">Nama lengkap <em>*</em></label><input id="nama" name="nama" type="text" value="Naufal Nabib Ramadhan" required></div>
+<div class="field"><label for="password">Password <em>*</em></label><input id="password" name="password" type="password" placeholder="Minimal 6 karakter" minlength="6" required></div>
+<div class="field"><label for="confirm">Ulangi password <em>*</em></label><input id="confirm" name="confirm" type="password" placeholder="Ketik ulang password" minlength="6" required></div>
+<div class="field"><label for="email">Email <em>*</em></label><input id="email" name="email" type="email" placeholder="nama@email.com" required></div>
+<div class="field"><label for="telepon">Nomor telepon</label><input id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx"></div>
+<div class="field full"><label for="alamat">Alamat</label><textarea id="alamat" name="alamat" rows="2" placeholder="Kota dan kecamatan"></textarea></div>
+<div class="field"><label>Jenis kelamin <em>*</em></label><div class="radio-line"><label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label><label><input type="radio" name="gender" value="Perempuan"> Perempuan</label></div></div>
+<div class="field"><label for="jurusan">Jurusan <em>*</em></label><select id="jurusan" name="jurusan" required><option value="">Pilih jurusan</option><option>Manajemen Informatika</option><option>Manajemen Informatika</option><option>Teknik Informatika</option><option>Sistem Informasi</option></select></div>
+<div class="field full"><label for="foto">Foto profil</label><input id="foto" name="foto" type="file" accept="image/*"></div>
+</div>
+<div class="form-bottom"><p><em>*</em> Wajib diisi</p><div class="form-actions"><a class="button secondary" href="index.html">← Kembali</a><button class="button primary" type="submit">Daftar sekarang <span>→</span></button></div></div>
+</form></section></main>
+<footer><span>© 2026 Student Portal · UTS Analisis dan Desain Web</span><span><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="mailto:">Email</a></span></footer>
+</div>
+<script>function checkPassword(){const a=document.getElementById('password').value,b=document.getElementById('confirm').value;if(a!==b){alert('Password dan ulangi password harus sama.');return false;}return true;}</script>
+</body></html>
